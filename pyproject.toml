@@ -1,0 +1,20 @@
+[project]
+name = "projet3"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Johndes",email = "jonathan@desurmont.pro"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests (>=2.33.1,<3.0.0)",
+    "pandas (>=3.0.2,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "projet3", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
